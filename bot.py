@@ -7,9 +7,13 @@ import sys
 import glob
 import importlib
 from pathlib import Path
-from pyrogram import idle
+from pyrogram import utild as pyroutils
 import logging
 import logging.config
+
+
+pyroutils.MIN_CHAT_ID = -999999999999
+pyroutils.MIN_CHANNEL_ID = -100999999999999
 
 # Get logging configurations
 logging.config.fileConfig('logging.conf')
